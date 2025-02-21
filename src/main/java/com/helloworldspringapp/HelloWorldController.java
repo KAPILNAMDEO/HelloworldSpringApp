@@ -22,4 +22,10 @@ public class HelloWorldController {
         model.addAttribute("message", "Hello from BridgeLabz");
         return "hello"; // Refers to hello.html in the templates folder
     }
+
+    //UC3
+    @GetMapping("/hello2")  // Handles GET requests to /api/hello
+    public String sayHelloUsingRestController() {
+        return "Hello from BridgeLabz";
+    }
 }
